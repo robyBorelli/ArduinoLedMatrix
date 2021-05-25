@@ -139,9 +139,7 @@ Go to the `pins.h` file and change the values as follows.
 
 - Declare how you have connected physical pins to Arduino:
 
-  If you have 6 rows and 24 columns and you have connected (from top to bottom) the first row to pin 37, the second row to pin 39,...
-
-  and (from left to right) the first column to pin 2, ... the code may look like this:
+  If you have 6 rows and 24 columns and you have connected (from top to bottom) the first row to pin 37, the second row to pin 39, ... and (from left to right) the first column to pin 2, ... the code may look like this:
 
   ```C
   /*ARDUINO PINS--------------------------------------*/ 
@@ -177,9 +175,36 @@ Now that you have the example running you can go deeper and set you words.
 - Basic understanding of Arduino code.
 
 #### 3.1. Add letters <a name="3.1"></a>	
-- ...
+- A letter is an array of integers formatted as follows:
+
+  ```c
+  /*
+   * int LETTER[] = {#rows, #cols, binary sequences}; 
+   *         --> #rows and #cols are the numbers of row and columns used by LETTER.
+   *         --> Each binary sequence rapresents the state of a row, so there are #row binary sequences.
+   *         --> Binary sequences are contained in LETTER[2...2+#rows].
+   *         --> "1" in pos j of LETTER[i+2] meanas that the led in row i and col j is active.
+   * example:
+   * int A[] = {5, 4, 0b0110, 0b1001, 0b1111, 0b1001, 0b1001};
+   *         --> A[0]=5.              There are 5 binarry sequences (1 for each row).
+   *         --> A[1]=4.              Each binary sequence have 4 digits (1 for each col).
+   *         --> A[3+2]=A[5]=0b1001   Represents the state of leds in row i-2=5-2=3.
+   *         --> The first and the last leds of row 3 are turned on.
+   */
+  ```
+
+- You can define your 6x5 letters in `alphabet_6_5_.h`, you can define your 5x4 letters in `alphabet_5_4_.h`, or you can define your m by n letters in a new file  `alphabet_m_n_.h`.
 #### 3.2. Add words <a name="3.2"></a>	
-- ...
+- A valid world is just an array of valid letters.
+
+  ```c
+  /*
+   * A VALID WORD is just an array of pointers of letters
+   * example: int *MYWORD[5] = {H,E,L,L,O};
+   */
+  ```
+
+- You can define your words in the file `words.h`
 
 #### 3.3. Add alphabets <a name="3.3"></a>	
 - ...
@@ -188,4 +213,18 @@ Now that you have the example running you can go deeper and set you words.
 - ...
 
 #### 3.5. Understanding basic functions <a name="3.5"></a>	
-- ...
+- The basic functions are:
+
+  ```C
+  /* SPECIFIC===========================================
+   * Manage a m*n matrix of leds to write letters and words.
+   * drawWord          (word, letters, startingCol, cycles)
+   * animWord          (word, letters, startingCol, endCol, cycles)
+   * drawWordInPlace   (word, letters, startingCol, cycles)
+   * animWordInPlace   (word, letters, startingCol, endCol, cycles)
+   * drawLetter        (letter, startingCol, cycles)
+   * animLetter        (letter, startingCol, endCol, cycles)
+   */
+  ```
+
+  

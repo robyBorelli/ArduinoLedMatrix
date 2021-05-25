@@ -6,8 +6,8 @@
 /*WORDS---------------------------------------------*/
 int *HELLO[5]          = {H,E,L,L,O};
 int *WORLD[5]          = {W,O,R,L,D};
-
-int *THIS[2]           = {I,S};
+int *THIS[4]           = {T,H,I,S};
+int *IS[2]             = {I,S};
 int *HOSTED[6]         = {H,O,S,T,E,D};
 int *ON[2]             = {O,N};
 int *GITHUB[6]         = {G,I,T,H,U,B};
