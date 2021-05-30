@@ -3,6 +3,12 @@ Arduino code to run an m*n led matrix powered by Arduino.
 
 This is a complete guide to perform both hardware and software. Please enjoy.
 
+<img src="Images/Git_printed.jpg">
+
+<video controls loop width="1920" height="1080">
+  <source src="Images/Github_animated.mp4" type="video/mp4">
+</video>
+
 -----------------------
 
 ## Table of contents
@@ -64,6 +70,10 @@ This is a complete guide to perform both hardware and software. Please enjoy.
 ----------------
 ## 1. Setup the hardware <a name="1"></a>	
 In this section is described one way to prepare the hardware. Of course there are other ways to do it for example you can use transistors, shift registers and much more can be done to overall improve the project. I decided to keep the hardware as simple as possible so it is just made of leds, arduino, wires and resistor, that's it.
+
+<img src="Images/Leds_front.jpg">
+
+<img src="Images/Leds_back.jpg">
 
 #### 1.0. Requirements <a name="1.0"></a>	
 
@@ -207,7 +217,7 @@ Now that you have the example running you can go deeper and set you words.
 - You can define your words in the file `words.h`
 
 #### 3.3. Add alphabets <a name="3.3"></a>	
-- ...
+- An alphabet with symbols of m rows and n columns, is a collection of valid letters.
 
 #### 3.4. Add animations <a name="3.4"></a>	
 - ...

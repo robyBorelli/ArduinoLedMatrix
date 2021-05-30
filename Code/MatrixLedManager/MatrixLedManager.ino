@@ -33,16 +33,9 @@ void setup() {
 }
 
 void loop() {
-  animWord(HELLO, 5, 24, -28, 5);
-  delay(100);
-  animWord(WORLD, 5, 24, -28, 5);
-  delay(100);
-  drawWord(THIS, 4, 0, 200);
-  delay(100);
-  drawWord(IS, 2, 0, 200);
-  delay(100);
-  animWord(OPEN, 4, 0, -20, 5);
-  delay(100);
-  animWord(SOURCE, 5, 24, -28, 3);
-  delay(1000);
+  animWord(HELLO, 5, COLS, -28, 4);
+  animWord(WORLD, 5, COLS, -28, 4);
+  animWord(GITHUB, 6, COLS, -40, 4);
+
+  drawWord(GIT, 3, 0, 200);
 }
