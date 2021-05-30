@@ -5,9 +5,7 @@ This is a complete guide to perform both hardware and software. Please enjoy.
 
 <img src="Images/Git_printed.jpg">
 
-<video controls loop width="1920" height="1080">
-  <source src="Images/Github_animated.mp4" type="video/mp4">
-</video>
+![screen-gif](./Images/Github_animated.gif)
 
 -----------------------
 
@@ -237,4 +235,4 @@ Now that you have the example running you can go deeper and set you words.
    */
   ```
 
-  
+  ``
