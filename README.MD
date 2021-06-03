@@ -82,15 +82,33 @@ In this section is described one way to prepare the hardware. Of course there ar
 - Basic understanding of circuits.
 
 #### 1.1. Prepare a support for welding <a name="1.1"></a>	
-- Take a sufficiently large piece of wood and make some 5mm (if you have 5mm LEDs) holes.
+- Take a sufficiently large piece of wood and make a matrix of 5mm holes (if you have 5mm LEDs).
+<img src="Images/hardwareSetup/matrixOfHoles.jpg">
+
+- Be sure that you can fit an LED in each hole.
+![screen-gif](./Images/hardwareSetup/checkHoles.gif)
+
 #### 1.2. Solder the matrix <a name="1.2"></a>	
+
 - Start from the bottom left.
 - Insert 2 LEDs in the first columns of the wood piece.
-- Connect the "-" through the 2 LEDs.
+- Bend the "-" vertically and solder to merge 2 LEDs.
+<img src="Images/hardwareSetup/2leds.png">
+
 - Add a third LED in the column and connect it.
+<img src="Images/hardwareSetup/3leds.png">
+
+- Complete the column.
+<img src="Images/hardwareSetup/column.png">
+
 - When the column is completed, add 2 LEDs in the column next to the right.
 - Connect the minus vertically and complete the second column.
+<img src="Images/hardwareSetup/2columns.png">
+
 - Now you have 2 columns. Connect them horizontally with the positive pins.
+- After connection is completed, check that "+" doesn't touch "-".
+<img src="Images/hardwareSetup/2columns_completed.png">
+
 - Continue adding columns in this way until you are done.
 
 #### 1.3. Connect to Arduino <a name="1.3"></a>	
