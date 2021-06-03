@@ -86,7 +86,7 @@ In this section is described one way to prepare the hardware. Of course there ar
 <img src="Images/hardwareSetup/matrixOfHoles.jpg">
 
 - Be sure that you can fit an LED in each hole.
-![screen-gif](./Images/hardwareSetup/checkHoles.gif)
+![screen-gif](./Images/hardwareSetup/checkHoles.gif) <br>
 
 #### 1.2. Solder the matrix <a name="1.2"></a>	
 
