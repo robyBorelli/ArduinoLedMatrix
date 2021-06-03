@@ -252,5 +252,3 @@ Now that you have the example running you can go deeper and set you words.
    * animLetter        (letter, startingCol, endCol, cycles)
    */
   ```
-
-  ``
