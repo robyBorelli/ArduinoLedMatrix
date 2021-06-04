@@ -1,5 +1,5 @@
 # ArduinoLedMatrix
-Arduino code to run an m*n led matrix powered by Arduino.
+Code to run an m*n led matrix powered by Arduino.
 
 This is a complete guide to perform both hardware and software. Please enjoy.
 
@@ -229,14 +229,18 @@ Now that you have the example running you can go deeper and set you words.
    * example: int *MYWORD[5] = {H,E,L,L,O};
    */
   ```
-
 - You can define your words in the file `words.h`
 
 #### 3.3. Add alphabets <a name="3.3"></a>	
 - An alphabet with symbols of m rows and n columns, is a collection of valid letters.
+- The alphabet defines which letters can be contained in your words.
+- You can define your own in alphabet and store in a `alphabet_m_n_.h` file.
 
 #### 3.4. Add animations <a name="3.4"></a>	
-- ...
+- An animation is a precise sequence of LEDs activation/disactivation.
+- An animation takes in input a `float t` which rapresents the total time in which the animation should be completed.
+- You can define some animations in the file `animations.ino`.
+- The deafult animations which plays at every start is `scanf_anim`.
 
 #### 3.5. Understanding basic functions <a name="3.5"></a>	
 - The basic functions are:
@@ -252,3 +256,10 @@ Now that you have the example running you can go deeper and set you words.
    * animLetter        (letter, startingCol, endCol, cycles)
    */
   ```
+  where:
+  - `word` must be a valid word as described in [section 3.2.](#3.2)
+  - `letter` must be a valid word as described in [section 3.1.](#3.1)
+  - `letters` is the dimension of the speciefied word.
+  - `startingCol` is the starting column in which arduino starts to print.
+  - `endCol` is end column in which arduino finishes the animation. 
+  - `cycles` is a measure of the total time in which the LEDs stay active.
